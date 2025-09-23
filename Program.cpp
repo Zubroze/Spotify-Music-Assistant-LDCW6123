@@ -226,8 +226,8 @@ int main() {
         // Ask if user wants to continue (except when exiting)
         if (continueProgram) {
             cout << "\nPress Enter to continue...";
-            cin.ignore(); // Clear input buffer
-            cin.get();    // Wait for Enter key
+            cin.ignore(); 
+            cin.get();    
         }
     }
     return 0;
