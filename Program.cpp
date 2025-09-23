@@ -194,3 +194,41 @@ void displaySubscriptionPlans() {
             break;
     }
 }
+
+// Main function - program entry point
+int main() {
+    int mainChoice;
+    bool continueProgram = true;
+    
+    cout << "Welcome to Spotify Music Assistant!" << endl;
+    
+    // Main program loop
+    while (continueProgram) {
+        displayMainMenu();
+        cin >> mainChoice;
+        
+        // Handle main menu selection using if-else
+        if (mainChoice == 1) {
+            getMusicRecommendation();
+        }
+        else if (mainChoice == 2) {
+            displaySubscriptionPlans();
+        }
+        else if (mainChoice == 3) {
+            cout << "\nThank you for using Spotify Assistant!" << endl;
+            cout << "Goodbye! 🎵" << endl;
+            continueProgram = false;
+        }
+        else {
+            cout << "\nInvalid choice! Please enter 1, 2, or 3." << endl;
+        }
+        
+        // Ask if user wants to continue (except when exiting)
+        if (continueProgram) {
+            cout << "\nPress Enter to continue...";
+            cin.ignore(); // Clear input buffer
+            cin.get();    // Wait for Enter key
+        }
+    }
+    return 0;
+}
