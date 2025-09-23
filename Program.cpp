@@ -142,3 +142,55 @@ void getMusicRecommendation() {
         cout << "\nInvalid choice! Please select 1-9." << endl;
     }
 }
+
+// Function to display subscription plan information
+void displaySubscriptionPlans() {
+    cout << "\n--- SUBSCRIPTION PLANS ---" << endl;
+    cout << "Choose a plan to view details:" << endl;
+    cout << "1. Free Plan" << endl;
+    cout << "2. Premium Plan" << endl;
+    cout << "3. Family Plan" << endl;
+    cout << "Enter plan choice (1-3): ";
+    
+    int planChoice;
+    cin >> planChoice;
+    
+    // Use switch statement to handle plan selection
+    switch (planChoice) {
+        case 1:
+            cout << "\n=== FREE PLAN ===" << endl;
+            cout << "Price: RM 0.00/month" << endl;
+            cout << "Benefits:" << endl;
+            cout << "- Listen with ads" << endl;
+            cout << "- Shuffle play only" << endl;
+            cout << "- Limited skips (6 per hour)" << endl;
+            cout << "- Standard audio quality" << endl;
+            break;
+            
+        case 2:
+            cout << "\n=== PREMIUM PLAN ===" << endl;
+            cout << "Price: RM 14.90/month" << endl;
+            cout << "Benefits:" << endl;
+            cout << "- No ads" << endl;
+            cout << "- Unlimited skips" << endl;
+            cout << "- High-quality audio" << endl;
+            cout << "- Offline downloads" << endl;
+            cout << "- Play any song on-demand" << endl;
+            break;
+            
+        case 3:
+            cout << "\n=== FAMILY PLAN ===" << endl;
+            cout << "Price: RM 22.90/month" << endl;
+            cout << "Benefits:" << endl;
+            cout << "- All Premium features" << endl;
+            cout << "- 6 Premium accounts" << endl;
+            cout << "- Individual profiles" << endl;
+            cout << "- Family mix playlist" << endl;
+            cout << "- Parental controls" << endl;
+            break;
+            
+        default:
+            cout << "\nInvalid choice! Please select 1-3." << endl;
+            break;
+    }
+}
