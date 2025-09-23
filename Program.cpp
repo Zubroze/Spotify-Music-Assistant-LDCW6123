@@ -88,3 +88,57 @@ void getMusicRecommendation() {
         "Creep by Radiohead",
         "Gorillaz"
     };
+
+    // Generate random song recommendation
+    srand(time(0)); // Initialize random seed
+    
+    // Use if-else to handle genre selection
+    if (genreChoice == 1) {
+        int randomIndex = rand() % countrySongs.size();
+        cout << "\nGenre: Country Music" << endl;
+        cout << "Recommended Song: " << countrySongs[randomIndex] << endl;
+    }
+    else if (genreChoice == 2) {
+        int randomIndex = rand() % rockAndRollSongs.size();
+        cout << "\nGenre: Rock and Roll" << endl;
+        cout << "Recommended Song: " << rockAndRollSongs[randomIndex] << endl;
+    }
+    else if (genreChoice == 3) {
+        int randomIndex = rand() % reggaeSongs.size();
+        cout << "\nGenre: Reggae" << endl;
+        cout << "Recommended Song: " << reggaeSongs[randomIndex] << endl;
+    }
+    else if (genreChoice == 4) {
+        int randomIndex = rand() % popularSongs.size();
+        cout << "\nGenre: Popular Music" << endl;
+        cout << "Recommended Song: " << popularSongs[randomIndex] << endl;
+    }
+    else if (genreChoice == 5) {
+        int randomIndex = rand() % indieRockSongs.size();
+        cout << "\nGenre: Indie Rock" << endl;
+        cout << "Recommended Song: " << indieRockSongs[randomIndex] << endl;
+    }
+    else if (genreChoice == 6) {
+        int randomIndex = rand() % latinaSongs.size();
+        cout << "\nGenre: Latina" << endl;
+        cout << "Recommended Song: " << latinaSongs[randomIndex] << endl;
+    }
+    else if (genreChoice == 7) {
+        int randomIndex = rand() % popRockSongs.size();
+        cout << "\nGenre: Pop Rock" << endl;
+        cout << "Recommended Song: " << popRockSongs[randomIndex] << endl;
+    }
+    else if (genreChoice == 8) {
+        int randomIndex = rand() % altRnbSongs.size();
+        cout << "\nGenre: Alternative R&B" << endl;
+        cout << "Recommended Song: " << altRnbSongs[randomIndex] << endl;
+    }
+    else if (genreChoice == 9) {
+        int randomIndex = rand() % altRockSongs.size();
+        cout << "\nGenre: Alternative Rock" << endl;
+        cout << "Recommended Song: " << altRockSongs[randomIndex] << endl;
+    }
+    else {
+        cout << "\nInvalid choice! Please select 1-9." << endl;
+    }
+}
