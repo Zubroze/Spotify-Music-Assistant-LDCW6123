@@ -33,3 +33,58 @@ void getMusicRecommendation() {
     
     int genreChoice;
     cin >> genreChoice;
+
+    // Arrays to store song recommendations for each genre
+    vector<string> countrySongs = {
+        "Tennessee Whiskey by Chris Stapleton",
+        "The Good Ones by Gabby Barrett",
+        "Heartbreak Highway by Luke Combs"
+    };
+    
+    vector<string> rockAndRollSongs = {
+        "Johnny B. Goode by Chuck Berry",
+        "Rock Around the Clock by Bill Haley",
+        "Great Balls of Fire by Jerry Lee Lewis"
+    };
+    
+    vector<string> reggaeSongs = {
+        "No Woman No Cry by Bob Marley",
+        "Three Little Birds by Bob Marley",
+        "Red Red Wine by UB40"
+    };
+    
+    vector<string> popularSongs = {
+        "Shape of You by Ed Sheeran",
+        "Bad Habits by Ed Sheeran",
+        "Flowers by Miley Cyrus"
+    };
+    
+    vector<string> indieRockSongs = {
+        "Mr. Brightside by The Killers",
+        "Somebody Told Me by The Killers",
+        "Take Me Out by Franz Ferdinand"
+    };
+    
+    vector<string> latinaSongs = {
+        "Despacito by Luis Fonsi ft. Daddy Yankee",
+        "Macarena by Los del Rio",
+        "Bamboléo by Gipsy Kings"
+    };
+    
+    vector<string> popRockSongs = {
+        "Don't Stop Me Now by Queen",
+        "Livin' on a Prayer by Bon Jovi",
+        "We Will Rock You by Queen"
+    };
+    
+    vector<string> altRnbSongs = {
+        "Blinding Lights by The Weeknd",
+        "Good 4 U by Olivia Rodrigo",
+        "Peaches by Justin Bieber"
+    };
+    
+    vector<string> altRockSongs = {
+        "Smells Like Teen Spirit by Nirvana",
+        "Creep by Radiohead",
+        "Gorillaz"
+    };
